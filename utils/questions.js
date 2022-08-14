@@ -27,9 +27,17 @@ const questions = [
     message: "How does one use this project?",
   },
   {
-    type: "input",
+    type: "list",
     name: "License",
-    message: "Provide license info if you have one.",
+    message: "Select a license to use for your project.",
+    choices: [
+      "MIT License",
+      "The Unlicense",
+      "Apache License 2.0",
+      "Mozilla Public License",
+      "GNU AGPLv3",
+      "I don't want to use a license.",
+    ],
   },
   {
     type: "input",

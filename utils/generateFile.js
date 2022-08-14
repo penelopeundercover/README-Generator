@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const content = input.questions;
+const content = "input".questions;
 
 function writeFile(path, content) {
   fs.writeFile(questions.js, content, (err) => {
