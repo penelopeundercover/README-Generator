@@ -1,7 +1,14 @@
 const fs = require("fs");
 
+const content = input.questions;
+
 function writeFile(path, content) {
-  //Create a file in the output folder
+  fs.writeFile(questions.js, content, (err) => {
+    if (err) {
+      console.error(err);
+    }
+    console.log("Ta-da! Your README is ready!");
+  });
 }
 
 module.exports = {
