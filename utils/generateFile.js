@@ -1,3 +1,5 @@
+//TODO: Create a function to write README file
+
 const fs = require("fs");
 
 const content = "input".questions;

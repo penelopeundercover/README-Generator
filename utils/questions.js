@@ -6,29 +6,29 @@ const questions = [
   },
   {
     type: "editor",
-    name: "Description",
+    name: "description",
     message:
       "Provide a short description explaining the what, why and how of your project. Press enter to launch your favorite editor.",
   },
   {
     type: "editor",
-    name: "Table of Conents",
+    name: "table-of-contents",
     message:
       "Press enter to launch your favorite editor and insert the table of contents.",
   },
   {
     type: "input",
-    name: "Installation",
+    name: "installation",
     message: "Provide a step-by-step guide to installing your project.",
   },
   {
     type: "input",
-    name: "Usage",
+    name: "usage",
     message: "How does one use this project?",
   },
   {
     type: "list",
-    name: "License",
+    name: "license",
     message: "Select a license to use for your project.",
     choices: [
       "MIT License",
@@ -41,19 +41,28 @@ const questions = [
   },
   {
     type: "input",
-    name: "Contributors",
+    name: "contributors",
     message: "Who worked on this project with you?",
   },
   {
     type: "input",
-    name: "Tests",
+    name: "tests",
     message: "How do you run tests on your project?",
   },
   {
     type: "input",
-    name: "Contact Info",
-    message:
-      "How can someone get in touch with you if they have questions about your project? Email, github, linkedIn, etc.",
+    name: "github",
+    message: "What is your GitHub username? ",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email address?",
+  },
+  {
+    type: "input",
+    name: "bonus-question",
+    message: "What is the air-speed velocity of an unladen swallow?",
   },
 ];
 
