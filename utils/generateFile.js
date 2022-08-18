@@ -1,11 +1,10 @@
 //TODO: Create a function to write README file
-
 const fs = require("fs");
 
 const content = "input".questions;
 
 function writeFile(path, content) {
-  fs.writeFile(questions.js, content, (err) => {
+  fs.writeFile("questions.js", content, (err) => {
     if (err) {
       console.error(err);
     }
@@ -13,6 +12,4 @@ function writeFile(path, content) {
   });
 }
 
-module.exports = {
-  writeFile,
-};
+module.exports = generateFile;

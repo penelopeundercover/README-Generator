@@ -5,13 +5,13 @@ const questions = [
     message: "What is the title of your project?",
   },
   {
-    type: "editor",
+    type: "input",
     name: "description",
     message:
-      "Provide a short description explaining the what, why and how of your project. Press enter to launch your favorite editor.",
+      "Provide a short description explaining the what, why and how of your project.",
   },
   {
-    type: "editor",
+    type: "input",
     name: "table-of-contents",
     message:
       "Press enter to launch your favorite editor and insert the table of contents.",
