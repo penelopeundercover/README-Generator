@@ -59,11 +59,6 @@ const questions = [
     name: "email",
     message: "What is your email address?",
   },
-  {
-    type: "input",
-    name: "bonus-question",
-    message: "What is the air-speed velocity of an unladen swallow?",
-  },
 ];
 
 module.exports = questions;

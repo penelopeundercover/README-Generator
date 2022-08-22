@@ -10,9 +10,7 @@ console.log("Let's make your README!");
 function init() {
   inquirer.prompt(questions).then((response) => {
     console.log(response);
-    writeFile(markdown, (err) =>
-      err ? console.log(err) : console.log("Success!")
-    );
+    writeFile("README.md", generateMarkdown(userInput));
   });
 }
 

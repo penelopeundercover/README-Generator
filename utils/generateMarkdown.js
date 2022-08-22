@@ -1,4 +1,4 @@
-const licenseText = require("./utils/licenseText.js");
+const licenseText = require("./licenseText.js");
 
 const licenseArray = [
   "MIT License",

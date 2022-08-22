@@ -1,6 +1,8 @@
-const questions = require("./utils/questions.js");
+const questions = require("./questions.js");
 
-if (license === licenseArray[0]) {
+const license = questions.license;
+const licenseArray = questions.choices;
+if (questions.license === licenseArray[0]) {
   licenseText ===
     `MIT License
 
