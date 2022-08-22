@@ -13,8 +13,7 @@ const questions = [
   {
     type: "input",
     name: "table-of-contents",
-    message:
-      "Press enter to launch your favorite editor and insert the table of contents.",
+    message: "Add the table of contents.",
   },
   {
     type: "input",

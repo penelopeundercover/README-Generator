@@ -12,4 +12,4 @@ function writeFile(path, content) {
   });
 }
 
-module.exports = generateFile;
+module.exports = writeFile;

@@ -1,4 +1,5 @@
 const licenseText = require("./licenseText.js");
+const questions = require("./questions.js");
 
 const licenseArray = [
   "MIT License",
@@ -56,8 +57,8 @@ function renderLicenseLink(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title};
+function generateMarkdown(questions) {
+  return `# ${questions.name};
   ${renderLicenseBadge(data.license)}
   ##Description
   ${data.description}
