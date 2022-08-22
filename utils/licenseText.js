@@ -1,8 +1,7 @@
 const questions = require("./questions.js");
 
-const license = questions.license;
-const licenseArray = questions.choices;
-if (questions.license === licenseArray[0]) {
+const questionsArray = questions[5].choices;
+if (questionsArray === [0]) {
   licenseText ===
     `MIT License
 
@@ -25,7 +24,7 @@ if (questions.license === licenseArray[0]) {
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE."`;
-} else if (license === licenseArray[1]) {
+} else if (questionsArray === [1]) {
   licenseText ===
     `This is free and unencumbered software released into the public domain.
 
@@ -51,7 +50,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>`;
-} else if (license === licenseArray[2]) {
+} else if (questionsArray === [2]) {
   licenseText ===
     `                                 Apache License
                            Version 2.0, January 2004
@@ -254,7 +253,7 @@ For more information, please refer to <https://unlicense.org>`;
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.`;
-} else if (license === licenseArray[3]) {
+} else if (questionsArray === [3]) {
   licenseText ===
     `Mozilla Public License Version 2.0
 ==================================
@@ -629,7 +628,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.`;
-} else if (license === licenseArray[4]) {
+} else if (questionsArray === [4]) {
   licenseText ===
     `                    GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
