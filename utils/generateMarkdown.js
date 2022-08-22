@@ -1,4 +1,4 @@
-const licenseText = require("./licenseText.js");
+const renderLicenseSection = require("./licenseText.js");
 const questions = require("./questions.js");
 
 const licenseArray = [
@@ -48,28 +48,22 @@ function renderLicenseLink(license) {
   } else {
     console.log("");
   }
-
-  // TODO: Create a function that returns the license section of README
-  // If there is no license, return an empty string
-  function renderLicenseSection(license) {
-    let licenseText = "";
-  }
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(questions) {
-  return `# ${questions.name};
+function generateMarkdown(data) {
+  return `# ${data.title};
   ${renderLicenseBadge(data.license)}
   ##Description
   ${data.description}
   ##Table of Contents
-  ${table - of - contents}
+  ${data.tableOfContents}
   ##Installation
   ${data.installation}
   ##Usage
   ${data.usage}
    ##License
-   ${renderLicenseLink}
+   ${renderLicenseLink(data.license)};
   ${renderLicenseSection(data.license)}
   ##Contributors
   ${data.contributors}

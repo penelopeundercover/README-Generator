@@ -1,10 +1,8 @@
 //TODO: Create a function to write README file
 const fs = require("fs");
 
-const content = "input".questions;
-
 function writeFile(path, content) {
-  fs.writeFile("questions.js", content, (err) => {
+  fs.writeFile("./docs/README.md", content, (err) => {
     if (err) {
       console.error(err);
     }

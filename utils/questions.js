@@ -12,7 +12,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "table-of-contents",
+    name: "tableOfContents",
     message: "Add the table of contents.",
   },
   {
