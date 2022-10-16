@@ -2,7 +2,7 @@
 const fs = require("fs");
 
 function writeFile(path, content) {
-  fs.writeFile("./docs/README.md", content, (err) => {
+  fs.writeFile("./Sample/README.md", content, (err) => {
     if (err) {
       console.error(err);
     }

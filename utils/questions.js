@@ -12,11 +12,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "tableOfContents",
-    message: "Add the table of contents.",
-  },
-  {
-    type: "input",
     name: "installation",
     message: "Provide a step-by-step guide to installing your project.",
   },

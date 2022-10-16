@@ -1,21 +1,23 @@
-# README-Generator;
+# README Generator
 
-undefined
 ##Description
-To generate a complete README using Node.js. This is a handy tool I can keep using in future!
-##Table of Contents
-I.Description II.Table of Contents III.Installation IV.Usage V.License VI.Contributors VII.Tests
+To quickly and easily generate a complete README. This is a handy tool to use again in the future!
+
 ##Installation
-First git clone the repo. Then install the inquirer npm.
+First copy the repo from github. Then open a terminal and npm i to install the inquirer npm.
+
 ##Usage
-Type node index.js into the terminal to run the program, and answer the questions. When you've answered all the questions it will generate a new README file with your answers, and the console will tell you it's done!
+Type node index.js in the terminal and hit enter, then answer the questions. When you've answered all the questions, your answers will be included in a new README.md file.
+
 ##License
-[("https://choosealicense.com/licenses/apache-2.0/")];
-undefined
+[("https://choosealicense.com/licenses/apache-2.0/")]
+
 ##Contributors
 This was a solo project.
+
 ##Tests
-Coming soon.
+Coming soon
+
 ##Contact Info
 [penelopeundercover](https://github.com/penelopeundercover)
 mjseiwert@outlook.com

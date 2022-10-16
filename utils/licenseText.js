@@ -3,9 +3,9 @@ const questions = require("./questions.js");
 
 const questionsArray = questions[5].choices;
 
-function renderLicenseSection(license) {
+function renderLicenseText(license) {
   if (questionsArray === [0]) {
-    licenseText ===
+    license ===
       `MIT License
 
  Copyright (c) [year] [fullname]
@@ -28,7 +28,7 @@ function renderLicenseSection(license) {
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE."`;
   } else if (questionsArray === [1]) {
-    licenseText ===
+    license ===
       `This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -54,7 +54,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>`;
   } else if (questionsArray === [2]) {
-    licenseText ===
+    license ===
       `                                 Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -257,7 +257,7 @@ For more information, please refer to <https://unlicense.org>`;
    See the License for the specific language governing permissions and
    limitations under the License.`;
   } else if (questionsArray === [3]) {
-    licenseText ===
+    license ===
       `Mozilla Public License Version 2.0
 ==================================
 
@@ -632,7 +632,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.`;
   } else if (questionsArray === [4]) {
-    licenseText ===
+    license ===
       `                    GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
@@ -1295,8 +1295,8 @@ if any, to sign a "copyright disclaimer" for the program, if necessary.
 For more information on this, and how to apply and follow the GNU AGPL, see
 <https://www.gnu.org/licenses/>.`;
   } else {
-    licenseText = "";
+    license = "";
   }
 }
 
-module.exports = renderLicenseSection;
+module.exports = renderLicenseText;
