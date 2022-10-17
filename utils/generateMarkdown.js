@@ -4,7 +4,6 @@ const questions = require("./questions.js");
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(renderLicenseSection.renderLicenseBadge(data.license));
   return `${renderLicenseSection.renderLicenseBadge(data.license)}
 
   # ${data.title}
@@ -13,14 +12,13 @@ function generateMarkdown(data) {
   ${data.description}
 
   ##Table of Contents
-  1. Description
-  2. Table of Contents
-  3. Installation
-  4. Usage
-  5. License
-  6. Contributors
-  7. Tests
-  8. Contact
+  1. [Description] (#description)
+  2. [Installation] (#installation)
+  3. [Usage] (#usage)
+  4. [License] (#license)
+  5. [Contributors] (#contributors)
+  6. [Tests] (#tests)
+  7. [Contact] (#contact)
 
   ##Installation
   ${data.installation}
