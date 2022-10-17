@@ -12,20 +12,15 @@ const licenseArray = [
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === licenseArray[0]) {
-    return;
-    `![License](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+    return `![License](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   } else if (license === licenseArray[1]) {
-    return;
-    `![License](https://img.shields.io/badge/license-Unlicense-blue.svg)`;
+    return `![License](https://img.shields.io/badge/license-Unlicense-blue.svg)`;
   } else if (license === licenseArray[2]) {
-    return;
-    `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
+    return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
   } else if (license === licenseArray[3]) {
-    return;
-    `![License](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`;
+    return `![License](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`;
   } else if (license === licenseArray[4]) {
-    return;
-    `![License](https://img.shields.io/badge/License-AGPL_v3-blue.svg)`;
+    return `![License](https://img.shields.io/badge/License-AGPL_v3-blue.svg)`;
   } else {
     console.log("");
   }

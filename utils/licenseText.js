@@ -1,12 +1,11 @@
 // TODO: Create a function that returns the license section of README
 const questions = require("./questions.js");
 
-const questionsArray = questions[5].choices;
+const questionsArray = questions[4].choices;
 
 function renderLicenseText(license) {
-  if (questionsArray === [0]) {
-    license ===
-      `MIT License
+  if (questionsArray[0] === license) {
+    return `MIT License
 
  Copyright (c) [year] [fullname]
 
@@ -27,9 +26,8 @@ function renderLicenseText(license) {
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE."`;
-  } else if (questionsArray === [1]) {
-    license ===
-      `This is free and unencumbered software released into the public domain.
+  } else if (questionsArray[1] === license) {
+    return `This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
@@ -53,9 +51,8 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>`;
-  } else if (questionsArray === [2]) {
-    license ===
-      `                                 Apache License
+  } else if (questionsArray[2] === license) {
+    return `                                 Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -256,9 +253,8 @@ For more information, please refer to <https://unlicense.org>`;
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.`;
-  } else if (questionsArray === [3]) {
-    license ===
-      `Mozilla Public License Version 2.0
+  } else if (questionsArray[3] === license) {
+    return `Mozilla Public License Version 2.0
 ==================================
 
 1. Definitions
@@ -631,9 +627,8 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.`;
-  } else if (questionsArray === [4]) {
-    license ===
-      `                    GNU AFFERO GENERAL PUBLIC LICENSE
+  } else if (questionsArray[4] === license) {
+    return `                    GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -1294,9 +1289,8 @@ specific requirements.
 if any, to sign a "copyright disclaimer" for the program, if necessary.
 For more information on this, and how to apply and follow the GNU AGPL, see
 <https://www.gnu.org/licenses/>.`;
-  } else {
-    license = "";
-  }
+  } else !license;
+  return "";
 }
 
 module.exports = renderLicenseText;
